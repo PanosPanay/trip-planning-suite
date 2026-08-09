@@ -1,4 +1,0 @@
-interface:
-  display_name: "旅行路线海报"
-  short_description: "从真实坐标与道路数据制作可编辑 HTML 和高清线路图"
-  default_prompt: "Use $trip-route-poster to build an editable HTML route poster from my canonical trip data, review overlaps, and export high-resolution images after approval."

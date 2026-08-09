@@ -58,7 +58,6 @@ def main():
     ]:
         require(dependency in sources, f"missing source attribution for {dependency}")
 
-    require((SKILL / "agents" / "openai.yaml").exists(), "missing agents/openai.yaml")
     init_script = SKILL / "scripts" / "init_trip_project.py"
     validate_script = SKILL / "scripts" / "validate_trip_project.py"
     require(init_script.exists(), "missing project initializer")

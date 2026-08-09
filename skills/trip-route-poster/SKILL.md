@@ -28,7 +28,7 @@ This copies the generic HTML/CSS/JS poster template and creates `data/route-post
 Run:
 
 ```bash
-node scripts/validate_route_poster.mjs <trip-project>/data/route-poster.json
+node scripts/validate_route_poster.js <trip-project>/data/route-poster.json
 ```
 
 ## HTML Review Loop

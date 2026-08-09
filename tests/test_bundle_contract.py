@@ -38,7 +38,7 @@ def main():
         "assets/route-poster.css",
         "assets/route-poster.js",
         "scripts/export_route_poster.py",
-        "scripts/validate_route_poster.mjs",
+        "scripts/validate_route_poster.js",
     ]:
         require((poster_skill / relative).exists(), f"route poster skill missed {relative}")
 

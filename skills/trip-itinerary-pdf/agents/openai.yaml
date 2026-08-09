@@ -1,4 +1,0 @@
-interface:
-  display_name: "旅行行程 PDF"
-  short_description: "将最终 Markdown、汇总表和高清线路图导出为分享 PDF"
-  default_prompt: "Use $trip-itinerary-pdf to export my finalized itinerary Markdown and route poster into a visually verified shareable PDF."
