@@ -1,0 +1,4 @@
+interface:
+  display_name: "端到端旅行规划"
+  short_description: "从目的地选择、机酒研究到地图与 PDF 的完整旅行编排工作流"
+  default_prompt: "Use $trip-planning-orchestrator to plan my trip from destination and flight research through a shareable itinerary, map, and PDF."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "携程酒店检索"
+  short_description: "按日期、双床房数量、预算和取消政策检索并复核携程酒店候选"
+  default_prompt: "Use $ctrip-hotel-search to find and verify five Ctrip hotel options for my dates, room type, room count, budget, and cancellation needs."

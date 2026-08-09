@@ -1,0 +1,7 @@
+interface:
+  display_name: "携程机票价格查询"
+  short_description: "查询携程单程或往返机票并按价格排序"
+  default_prompt: "Use $ctrip-flight-prices to query Ctrip airfare from 深圳 to 丽江 on 2026-06-01, returning 2026-06-12, sorted by price."
+
+policy:
+  allow_implicit_invocation: true

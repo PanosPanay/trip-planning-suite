@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "bundleVersion": "0.1.0",
+  "bundledSkills": [
+    "trip-planning-orchestrator",
+    "ctrip-flight-prices",
+    "ctrip-hotel-search",
+    "trip-route-poster",
+    "trip-itinerary-pdf"
+  ],
+  "externalSkills": [
+    {
+      "name": "interactive-trip-planner",
+      "source": "redskill",
+      "required": true,
+      "minimumVersion": "0.0.2",
+      "verifiedVersion": "0.0.2",
+      "installPage": "https://redskill.xiaohongshu.net/install.md",
+      "installCommand": "redskill install interactive-trip-planner --dir <skills-directory>",
+      "reason": "Full staged itinerary research, canonical trip data, and editable dynamic map workflow"
+    }
+  ],
+  "runtimeRequirements": [
+    "Filesystem read/write access",
+    "Network and browser access for live research",
+    "Python 3",
+    "Node.js for map validation",
+    "Playwright with Chromium for Ctrip automation and high-resolution exports",
+    "Pandoc for Markdown to HTML conversion",
+    "Poppler for PDF page rendering and visual QA"
+  ]
+}

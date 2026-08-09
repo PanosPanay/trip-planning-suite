@@ -1,0 +1,18 @@
+{
+  "name": "trip-planning-suite",
+  "version": "0.1.0",
+  "description": "End-to-end trip planning from live flight and hotel research through iterative itineraries, dynamic maps, route posters, and shareable PDFs.",
+  "author": {
+    "name": "Trip Planning Suite contributors"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "端到端旅行规划套件",
+    "shortDescription": "从机酒研究到地图、线路图和 PDF 的完整旅行工作流",
+    "longDescription": "一个分层调用子 Skill 的旅行规划套件，支持多出发地机票比较、酒店选择、对话迭代、详细 Markdown、动态地图、可编辑 HTML 线路海报和高清 PDF 交付。",
+    "developerName": "Trip Planning Suite contributors",
+    "category": "Productivity",
+    "capabilities": ["skills"],
+    "defaultPrompt": "Use $trip-planning-orchestrator to plan this trip end to end and keep the itinerary, map, route poster, and PDF synchronized."
+  }
+}

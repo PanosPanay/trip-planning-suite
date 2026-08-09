@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Trip Route Poster</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/route-poster.css">
+</head>
+<body>
+  <main id="poster" class="poster">
+    <header class="poster-header"><div><h1 id="poster-title"></h1><p id="poster-subtitle"></p></div><div id="poster-facts" class="poster-facts"></div></header>
+    <section class="poster-body">
+      <section class="main-map-wrap"><div id="main-map"></div><div id="poi-index" class="poi-index"></div><div id="route-legend" class="route-legend"></div></section>
+      <aside class="detail-rail"><section id="day-strip" class="day-strip"></section><section id="inset-grid" class="inset-grid"></section></aside>
+    </section>
+    <footer class="poster-footer"><p id="poster-note"></p><p>OpenStreetMap</p></footer>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script src="assets/route-poster.js"></script>
+</body>
+</html>

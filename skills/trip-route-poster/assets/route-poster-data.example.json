@@ -1,0 +1,28 @@
+{
+  "title": "Sample Mountain Loop · 4 days",
+  "subtitle": "Gateway → Lake → Mountain village → Gateway",
+  "facts": ["Approx. 420 km", "3 driving days", "1 optional branch"],
+  "note": "Solid lines are the default route. Dashed lines are mutually exclusive alternatives and require a live access check.",
+  "days": [
+    {"day": 1, "date": "D1", "title": "Arrival", "summary": "Gateway city", "stayId": "gateway", "color": "#176d73"},
+    {"day": 2, "date": "D2", "title": "Lake route", "summary": "Scenic road and lake", "stayId": "lake", "color": "#3a8f5b"},
+    {"day": 3, "date": "D3", "title": "Mountain route", "summary": "Viewpoint and village", "stayId": "village", "color": "#bd5b32"},
+    {"day": 4, "date": "D4", "title": "Return", "summary": "Return to gateway", "stayId": null, "color": "#335f8a"}
+  ],
+  "points": [
+    {"id": "gateway", "name": "Gateway", "day": 1, "coordinates": [30.65, 104.06], "elevationM": 500, "poster": {"token": "D1", "offset": [70, -45], "width": 150, "caption": "Stay"}},
+    {"id": "lake", "name": "Lake", "day": 2, "coordinates": [30.9, 103.2], "elevationM": 2600, "poster": {"token": "2", "offset": [60, -55], "width": 145, "highlight": true, "caption": "D2 stay"}},
+    {"id": "village", "name": "Mountain Village", "day": 3, "coordinates": [30.4, 102.4], "elevationM": 3400, "poster": {"token": "3", "offset": [-80, -50], "width": 165, "caption": "D3 stay"}}
+  ],
+  "segments": [
+    {"id": "d2", "name": "Gateway to lake", "day": 2, "distanceKm": 160, "driveTime": "Normal 3h / peak 5h", "color": "#3a8f5b", "geometry": [[30.65,104.06],[30.78,103.65],[30.9,103.2]], "poster": {"offset": [0,-65]}},
+    {"id": "d3", "name": "Lake to village", "day": 3, "distanceKm": 130, "driveTime": "Normal 3h / peak 4.5h", "color": "#bd5b32", "geometry": [[30.9,103.2],[30.65,102.8],[30.4,102.4]], "poster": {"offset": [0,-60]}},
+    {"id": "d4", "name": "Village to gateway", "day": 4, "distanceKm": 130, "driveTime": "Normal 3h / peak 5h", "color": "#335f8a", "geometry": [[30.4,102.4],[30.35,103.3],[30.65,104.06]], "poster": {"offset": [0,65]}}
+  ],
+  "optionalSegments": [
+    {"id": "option-a", "name": "Optional viewpoint", "day": 3, "activation": "Clear weather only", "color": "#7656a5", "geometry": [[30.4,102.4],[30.2,102.15]], "poster": {"offset": [-30,45], "width": 125}}
+  ],
+  "insets": [
+    {"id": "lake-detail", "kicker": "D2 deep experience", "title": "Lake visiting route", "subtitle": "Entrance → shuttle → lake walk", "wide": true, "color": "#3a8f5b", "flow": "Entrance → shuttle → lake → return", "stops": [{"pointId": "gateway"},{"pointId": "lake"}], "segments": [{"geometry": [[30.65,104.06],[30.9,103.2]], "color": "#3a8f5b"}]}
+  ]
+}
